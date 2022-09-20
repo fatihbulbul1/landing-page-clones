@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+}
+a, a:hover, a:active, a:visited, a:focus {
+    text-decoration: none;
+    color: initial;
+}
+a::after{
+    color: white;
+}
+body{
+    overflow-x: hidden;
+}
+nav{
+    padding: 40px 150px;
+}
+.container-temp{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.links{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+#login{
+    color: red;
+    text-transform: uppercase;
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 7px 25px;
+}
+main{
+    padding: 30px 150px;
+    min-height: 90vh;
+}
+input[type="button"]{
+    cursor: pointer;
+}
+#main-container{
+    display: flex;
+    align-items: center;
+}
+#main-container div{
+    width: 50%;
+}
+#textdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#btnsdiv{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    width: 100% !important;
+}
+#imgdiv{
+    padding: 50px;
+    padding-right: 0 !important;
+}
+.textbtn{
+    padding: 7px 15px;
+    background-color: white;
+    border-radius: 5px;
+}
+#textdiv h1{
+    max-width: 400px;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+#textdiv p{
+    max-width: 400px;
+    color: hsl(229, 8%, 60%);
+    line-height: 1.5rem;
+}
+#tablet{
+    width: 100%;
+}
+.background-blue{
+    z-index: -1;
+    position: absolute;
+    width: 700px;
+    height: 300px;
+    background-color: hsl(231, 69%, 60%);
+    right: -200px;
+    border-radius: 300px;
+    top: 300px;
+}
+#features{
+    padding: 0 150px 50px 150px;
+    position: relative;
+}
+#features-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#features-div p{
+    margin: 20px 0;
+    max-width: 450px;
+    line-height: 1.5rem;
+    text-align: center;
+}
+#features-div h1{
+    font-weight: 500;
+}
+#buttons{
+    display: flex;
+}
+.feature-btn{
+    padding: 15px 0;
+    width: 250px;
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+.active{
+    border-bottom: 3px solid rgb(255, 98, 0) !important;
+}
+#content{
+    margin-top: 50px;
+    width: 100%;
+    gap: 60px;
+    display: flex;
+}
+#featuretext, #imgfeature{
+    width: 50%;
+}
+#imgfeature{
+    padding: 80px;
+    padding-left: 0;
+}
+#imgfeature img{
+    width: 100%;
+}
+#featuretext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#featuretext p{
+    text-align: left;
+    max-width: 400px;
+}
+.moreinfo{
+    padding: 10px;
+    color: white;
+    max-width: 100px;
+    background-color: hsl(231, 69%, 60%);
+    border: none;
+    border-radius: 5px;
+}
+.blue-features{
+    left: -200px;
+    top: 400px;
+}
+#downloads{
+    padding: 20px 150px;
+}
+#download-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#download-container p{
+    max-width: 500px;
+    text-align: center;
+}
+#cardsdiv{
+    padding-bottom: 5px;
+    overflow: visible;
+    margin-top: 50px;
+    height: 400px;
+    display: flex;
+    gap: 30px;
+}
+.card{
+    padding: 10px 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+    width: 250px;
+}
+.cardid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 50px;
+}
+.btncard{
+    max-width:none;
+}
+.cardid p{
+    font-size: 13px;
+}
+.firefox{
+    align-self: center;
+}
+.opera{
+    align-self: flex-end;
+}
+#faq{
+    padding: 20px 150px;
+}
+#faq-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#faq-container h1{
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+#faqtext{
+    max-width: 450px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+#questions{
+    margin-bottom: 30px;
+}
+.q{
+    width: 400px;
+    padding: 15px 0;
+    border-top: 1px solid hsl(229, 17%, 75%);
+    display: flex;
+    justify-content: space-between;
+}
+.q img{
+    width: 18px;
+    height: 12px;
+    margin-right: 10px;
+}
+#faq .moreinfo{
+    margin-bottom: 100px;
+}
+footer{
+    color: #fff;
+    background-color: hsl(231, 69%, 60%);
+    padding: 70px 0;
+}
+footer > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+}
+footer h4{
+    font-weight: 400;
+}
+footer h1{
+    max-width: 450px;
+    font-weight: 400;
+}
+#email{
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+#contact{
+    padding: 10px;
+    background-color: hsl(0, 94%, 66%);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+#footernav{
+    color: #fff !important;
+    background-color: hsl(229, 31%, 21%);
+}
+#footernav .container{
+    justify-content: start;
+}
+#icons{
+    display: flex;
+    gap: 40px;
+    margin-left: auto;
+}
