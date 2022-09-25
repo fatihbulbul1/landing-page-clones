@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/images/logo.svg" alt="">
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="end-section">
+                <img class="cart" src="/images/icon-cart.svg" alt="">
+                <div style="display: none;" id="cart-div">
+                    <p class="header">Cart</p>
+                    <div id="items-div">
+                        <p>The cart is empty</p>
+                    </div>
+                </div>
+                <img class="avatar" src="/images/image-avatar.png" alt="">
+        </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="img-section">
+                <div class="bigger"><img src="../images/image-product-1.jpg" alt=""></div>
+                <div class="thumbnail thumbnail1"><img src="../images/image-product-1-thumbnail.jpg" class="selected" alt=""></div>
+                <div class="thumbnail thumbnail2"><img src="../images/image-product-2-thumbnail.jpg" alt=""></div>
+                <div class="thumbnail thumbnail3"><img src="../images/image-product-3-thumbnail.jpg" alt=""></div>
+                <div class="thumbnail thumbnail4"><img src="../images/image-product-4-thumbnail.jpg" alt=""></div>
+        </div>
+            <div class="text-section">
+                <div class="text-container">
+                    <p>Sneaker Company</p>
+                    <h1>Fall Limited Edition Sneakers</h1>
+                    <p class="desc">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+                        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+                        <div class="price">
+                            <h2>$125.00</h2>
+                            <p>50%</p>
+                        </div>
+                    <p class="old">$250.00</p>
+                    <div class="btn-div">
+                        <div class="quantity">
+                            <span class="changebtn" onclick="decrement()">-</span>
+                            <span style="color:#000;" id="num">0</span>
+                            <span class="changebtn" onclick="increment()">+</span>
+                        </div>
+                        <button onclick="addToCart()">
+                            <img id="addcart" class src="/images/icon-cart.svg" alt="">
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="lightbox">
+            <div id="container">
+            <img src="" id="lightbox-image" alt="">
+            <div id="left">
+                <i id="leftbtn" class=" fa-solid fa-angle-left"></i>
+            </div>
+            <div id="right">
+                <i id="rightbtn" class=" fa-solid fa-angle-right"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
